@@ -9,15 +9,6 @@ const Country = ({country, visitedCountry, setVisitedCountry}) => {
             (country) => country.name.common ===countries[index].name.common
         )
 
-        if(visitedCountryList === -1){
-            setVisitedCountry([... visitedCountry, countries[index]]);
-        } else { 
-            setVisitedCountry(
-                visitedCountry.filter((country, i)=> i !== visitedCountryIndex)
-            )
-        }
-    }
-
     return (  
         <>
         <h3>Country: {country.name.common} 
